@@ -45,6 +45,8 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.btncancelar = new System.Windows.Forms.Button();
             this.btnregistrar = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtfechanacimiento = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.Direccion.SuspendLayout();
@@ -115,6 +117,8 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.txtfechanacimiento);
+            this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.pictureBox1);
             this.groupBox1.Controls.Add(this.txtnombre);
             this.groupBox1.Controls.Add(this.lblcuit);
@@ -122,9 +126,9 @@
             this.groupBox1.Controls.Add(this.lblapellido);
             this.groupBox1.Controls.Add(this.txtcuit);
             this.groupBox1.Controls.Add(this.lblnombre);
-            this.groupBox1.Location = new System.Drawing.Point(12, 12);
+            this.groupBox1.Location = new System.Drawing.Point(13, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(384, 119);
+            this.groupBox1.Size = new System.Drawing.Size(384, 150);
             this.groupBox1.TabIndex = 7;
             this.groupBox1.TabStop = false;
             // 
@@ -132,7 +136,7 @@
             // 
             this.Direccion.Controls.Add(this.Dirección);
             this.Direccion.Controls.Add(this.Contacto);
-            this.Direccion.Location = new System.Drawing.Point(12, 138);
+            this.Direccion.Location = new System.Drawing.Point(13, 168);
             this.Direccion.Name = "Direccion";
             this.Direccion.SelectedIndex = 0;
             this.Direccion.Size = new System.Drawing.Size(384, 139);
@@ -218,6 +222,24 @@
             this.btnregistrar.UseVisualStyleBackColor = true;
             this.btnregistrar.Click += new System.EventHandler(this.btnregistrar_Click);
             // 
+            // label3
+            // 
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(-3, 95);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(134, 23);
+            this.label3.TabIndex = 7;
+            this.label3.Text = "Fecha de nacimiento";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // txtfechanacimiento
+            // 
+            this.txtfechanacimiento.Location = new System.Drawing.Point(137, 95);
+            this.txtfechanacimiento.Multiline = true;
+            this.txtfechanacimiento.Name = "txtfechanacimiento";
+            this.txtfechanacimiento.Size = new System.Drawing.Size(132, 20);
+            this.txtfechanacimiento.TabIndex = 8;
+            // 
             // Frmusuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -260,5 +282,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btncancelar;
         private System.Windows.Forms.Button btnregistrar;
+        private System.Windows.Forms.TextBox txtfechanacimiento;
+        private System.Windows.Forms.Label label3;
     }
 }
